@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'generics-traits-life-cycle'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=generics-traits-life-cycle",
+                    "--package=generics-traits-life-cycle"
+                ],
+                "filter": {
+                    "name": "generics-traits-life-cycle",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'generics-traits-life-cycle'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=generics-traits-life-cycle",
+                    "--package=generics-traits-life-cycle"
+                ],
+                "filter": {
+                    "name": "generics-traits-life-cycle",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
